@@ -2,9 +2,9 @@
 
 StayFinder is an original, photo-forward accommodation marketplace inspired by familiar vacation-rental workflows. Guests can discover stays, check real availability, receive server-calculated quotes, complete a mocked checkout, manage trips, and save favorites. Demo hosts can create, edit, archive, reactivate, and safely delete their own listings.
 
-> Live frontend: `https://YOUR-VERCEL-PROJECT.vercel.app`  
-> Live API: `https://YOUR-RENDER-SERVICE.onrender.com`  
-> Repository: `https://github.com/YOUR-USERNAME/stayfinder`
+> Live frontend: `https://airbnb-clone-livid-five.vercel.app`  
+> Live API: `https://stayfinder-api-vflt.onrender.com`  
+> Repository: `https://github.com/Bheema97/airbnb-clone`
 
 ## Screenshots
 
