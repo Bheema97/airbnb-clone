@@ -179,8 +179,8 @@ Protected demo operations require `X-Demo-User-Id`. This is deliberately not rea
 Prerequisites: Node.js 20+, npm, and Python 3.11+.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/stayfinder.git
-cd stayfinder
+git clone https://github.com/Bheema97/airbnb-clone.git
+cd airbnb-clone
 
 python -m venv .venv
 # macOS/Linux: source .venv/bin/activate
@@ -268,10 +268,12 @@ Playwright uses an isolated `backend/e2e.db`, reseeds it for each suite run, sta
 
 ## Deployment
 
-### Backend on Render with persistent SQLite
+### Optional persistent SQLite deployment
 
-1. Push the repository to GitHub and create a Render Blueprint from `render.yaml`.
-2. Attach the declared persistent disk at `/data`.
+This is an optional upgrade for a paid Render service or another host that supports persistent volumes; it is not enabled by the current `render.yaml`.
+
+1. Create a Render service from the repository.
+2. Attach a persistent disk at `/data`.
 3. Set `ALLOWED_ORIGINS` to the deployed Vercel origin.
 4. Keep `DATABASE_PATH=/data/airbnb.db`, `SEED_IF_EMPTY=true`, and `SEED_ON_START=false`.
 5. Verify `/api/health` and `/api/docs` after deployment.
