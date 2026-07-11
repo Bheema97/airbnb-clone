@@ -8,14 +8,10 @@ services:
     healthCheckPath: /api/health
     envVars:
       - key: DATABASE_PATH
-        value: /data/airbnb.db
+        value: ./airbnb.db
       - key: SEED_IF_EMPTY
-        value: "true"
-      - key: SEED_ON_START
         value: "false"
+      - key: SEED_ON_START
+        value: "true"
       - key: ALLOWED_ORIGINS
         sync: false
-    disk:
-      name: stayfinder-data
-      mountPath: /data
-      sizeGB: 1
