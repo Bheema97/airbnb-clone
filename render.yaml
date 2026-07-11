@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: stayfinder-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_PATH
+        value: /data/airbnb.db
+      - key: SEED_IF_EMPTY
+        value: "true"
+      - key: SEED_ON_START
+        value: "false"
+      - key: ALLOWED_ORIGINS
+        sync: false
+    disk:
+      name: stayfinder-data
+      mountPath: /data
+      sizeGB: 1

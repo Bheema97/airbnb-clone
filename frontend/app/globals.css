@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button, a, input, select { outline-color: #f43f5e; outline-offset: 2px; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+.calendar-container .rdp-months { display: flex; gap: 1.5rem; }
+@media (max-width: 640px) {
+  .calendar-container { overflow-x: auto; }
+  .calendar-container .rdp-months { width: max-content; }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
