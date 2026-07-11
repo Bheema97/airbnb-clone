@@ -6,6 +6,8 @@ StayFinder is an original, photo-forward accommodation marketplace inspired by f
 > Live API: [StayFinder API](https://stayfinder-api-vflt.onrender.com)<br>
 > Repository: [GitHub](https://github.com/Bheema97/airbnb-clone)
 
+> **Hosted demo database:** The Render deployment uses ephemeral SQLite with `SEED_ON_START=true`. When the backend service restarts or is redeployed, its database is recreated and restored to the deterministic seed data. Bookings, favorites, cancellations, and host listings created during a demo session therefore do not survive a restart. This does not affect persistence during a normal uninterrupted session.
+
 ## Screenshots
 
 ### Marketplace
@@ -278,7 +280,7 @@ The disk preserves demo bookings and host edits across restarts. Railway can use
 
 ### Ephemeral demo alternative
 
-If persistent storage is unavailable, omit the disk, use `DATABASE_PATH=./airbnb.db`, and set `SEED_ON_START=true`. Data will reset whenever the backend restarts or redeploys. This is a deliberate demo limitation, not durable persistence.
+The current public Render demo uses this option: no persistent disk, `DATABASE_PATH=./airbnb.db`, and `SEED_ON_START=true`. Data persists while the running service remains active, but the database is recreated and deterministically reseeded whenever the backend restarts or redeploys. Consequently, user-created bookings, favorites, cancellations, and host listing changes are reset. This is a deliberate demo limitation, not durable production persistence.
 
 ### Frontend on Vercel
 
@@ -298,6 +300,7 @@ If persistent storage is unavailable, omit the disk, use `DATABASE_PATH=./airbnb
 
 ## Known limitations
 
+- The hosted Render database resets to deterministic seed data after every backend restart or redeployment.
 - SQLite is appropriate for this single-instance assignment demo, not horizontally scaled concurrent production traffic.
 - Booking conflict checks are repeated at creation, but a production system should use PostgreSQL transactions and database-level exclusion or locking guarantees.
 - Currency is displayed as USD and is not localized.
