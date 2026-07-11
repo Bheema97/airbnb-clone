@@ -2,18 +2,39 @@
 
 StayFinder is an original, photo-forward accommodation marketplace inspired by familiar vacation-rental workflows. Guests can discover stays, check real availability, receive server-calculated quotes, complete a mocked checkout, manage trips, and save favorites. Demo hosts can create, edit, archive, reactivate, and safely delete their own listings.
 
-> Live frontend: `https://airbnb-clone-livid-five.vercel.app`  
-> Live API: `https://stayfinder-api-vflt.onrender.com`  
-> Repository: `https://github.com/Bheema97/airbnb-clone`
+> Live frontend: [StayFinder](https://airbnb-clone-livid-five.vercel.app)<br>
+> Live API: [StayFinder API](https://stayfinder-api-vflt.onrender.com)<br>
+> Repository: [GitHub](https://github.com/Bheema97/airbnb-clone)
 
 ## Screenshots
 
-Add final screenshots here after deployment:
+### Marketplace
 
-- Marketplace at desktop and mobile widths
-- Listing availability and price quote
-- Booking confirmation and My Trips
-- Host dashboard and listing form
+![StayFinder desktop marketplace](docs/screenshots/IMG_1739.png)
+
+### Responsive mobile experience
+
+![StayFinder mobile marketplace](docs/screenshots/1000528747.jpg)
+
+### Listing details
+
+![StayFinder listing gallery and reservation panel](docs/screenshots/IMG_1740.png)
+
+### Availability and server-generated quote
+
+![StayFinder availability calendar and price breakdown](<docs/screenshots/Screenshot 2026-07-11 093533.png>)
+
+### Mock checkout
+
+![StayFinder mocked checkout and trip summary](<docs/screenshots/Screenshot 2026-07-11 093547.png>)
+
+### Host dashboard
+
+![StayFinder host dashboard and listing management](<docs/screenshots/Screenshot 2026-07-11 093559.png>)
+
+### Create listing
+
+![StayFinder host listing form](<docs/screenshots/Screenshot 2026-07-11 093641.png>)
 
 ## Core features
 
