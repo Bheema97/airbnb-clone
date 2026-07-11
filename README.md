@@ -3,7 +3,7 @@
 StayFinder is an original, photo-forward accommodation marketplace inspired by familiar vacation-rental workflows. Guests can discover stays, check real availability, receive server-calculated quotes, complete a mocked checkout, manage trips, and save favorites. Demo hosts can create, edit, archive, reactivate, and safely delete their own listings.
 
 > Live frontend: [StayFinder](https://airbnb-clone-livid-five.vercel.app)<br>
-> Live API: [StayFinder API](https://stayfinder-api-vflt.onrender.com)<br>
+> Live API: [StayFinder API documentation](https://stayfinder-api-vflt.onrender.com/api/docs)<br>
 > Repository: [GitHub repository](https://github.com/Bheema97/airbnb-clone)
 
 > **Hosted demo database:** The Render deployment uses ephemeral SQLite with `SEED_ON_START=true`. When the backend service restarts or is redeployed, its database is recreated and restored to the deterministic seed data. Bookings, favorites, cancellations, and host listings created during a demo session therefore do not survive a restart. This does not affect persistence during a normal uninterrupted session.
